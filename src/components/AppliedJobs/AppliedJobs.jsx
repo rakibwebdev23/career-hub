@@ -46,7 +46,7 @@ const AppliedJobs = () => {
     return (
         <div>
             <Helmet>Career Hub - Applied Jobs</Helmet>
-            <div className="applied rounded-t-md h-[500px]  flex items-center b">
+            <div className="applied rounded-t-md h-[500px]  flex items-center">
                 <p className="mx-auto text-5xl font-bold bg-black bg-opacity-50 px-48 py-20 text-blue-500">Applied Jobs</p>
             </div>
             <div className="flex">
