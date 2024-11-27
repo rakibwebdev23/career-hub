@@ -10,12 +10,12 @@ const Job = ({ job }) => {
             <figure><img className="max-w-5xl mx-auto max-h-36 mt-4" src={logo} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title font-bold text-xl">{job_title}</h2>
-                <p className="text-lg text-gray-500">{company_name}</p>
+                <p className="text-lg text-gray-700">{company_name}</p>
                 <div>
                     <button className="font-extrabold py-2 px-5 border-2 border-indigo-500/75 rounded text-indigo-500 mr-4">{remote_or_onsite}</button>
                     <button className="font-extrabold py-2 px-5 border-2 border-indigo-500/75 rounded text-indigo-500 mr-4 ">{job_type}</button>
                 </div>
-                <div className="flex  text-gray-500">
+                <div className="flex  text-gray-700">
                     <p className="flex items-center gap-1 mx-auto"><CiLocationOn /> {location}</p>
                     <p className="flex items-center gap-1 ml-0 pl-0"><CiDollar /> {salary}</p>
                 </div>

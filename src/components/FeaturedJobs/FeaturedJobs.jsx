@@ -15,11 +15,11 @@ const FeaturedJobs = () => {
     return (
         <div>
             <div className="mt-20">
-                <div className="text-center text-wrap">
+                <div className="text-center text-wrap w-3/4 mx-auto">
                     <h4 className="text-4xl text-black font-bold mb-2">Featured Jobs</h4>
-                    <p className="text-xl text-gray-500">Explore thousands of job opportunities with all the information you need. Its your future</p>
+                    <p className="lg:text-xl text-black text-center">Explore thousands of job opportunities with all the information you need. Its your future</p>
                 </div>
-                <div className="grid md:grid-cols-2 gap-10 items-center">
+                <div className="grid lg:grid-cols-2 gap-10 items-center px-4 lg:px-0">
                     {
                         jobs.slice(0, showAllData).map(job => <Job
                             key={job.id}

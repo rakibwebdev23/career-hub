@@ -17,21 +17,21 @@ const ViewDetails = () => {
     }
 
     return (
-        <div>
+        <div className="px-4 lg:px-8">
             <HelmetShared helmetTitle="Details"></HelmetShared>
             <div className="mb-6 mt-10">
                 <div className=" h-60 flex place-content-center bg-gray-100 rounded-t-lg">
                     <img className="py-10" src={logo} alt="" />
                 </div>
-                <div className="grid md:grid-cols-4 gap-4 ">
-                    <div className=" md:col-span-3 gap-4 sm:text-wrap text-pretty mt-4">
-                        <h3 className="mb-4"><span className="font-bold text-black">Job Description: </span> <span className="text-gray-500">{job_description}</span></h3>
-                        <p className="mb-4"><span className="font-bold text-black">Job Responsibility: </span><span className="text-gray-500">{job_responsibility}</span></p>
-                        <p className="mb-4"><span className="font-bold text-black">Educational Requirements: </span><span className="text-gray-500">{educational_requirements}</span></p>
-                        <p className="text-wrap"><span className="font-bold text-black">Experience: </span><span className="text-gray-500">{experiences}</span></p>
+                <div className="grid lg:grid-cols-4 gap-4 ">
+                    <div className=" lg:col-span-3 gap-4 mt-4 text-justify">
+                        <h3 className="mb-4"><span className="font-bold text-black">Job Description: </span> <span className="text-gray-700">{job_description}</span></h3>
+                        <p className="mb-4"><span className="font-bold text-black">Job Responsibility: </span><span className="text-gray-700">{job_responsibility}</span></p>
+                        <p className="mb-4"><span className="font-bold text-black">Educational Requirements: </span><span className="text-gray-700">{educational_requirements}</span></p>
+                        <p className="text-wrap"><span className="font-bold text-black">Experience: </span><span className="text-gray-700">{experiences}</span></p>
                     </div>
-                    <div className="sm:text-balance">
-                        <div className=" bg-gray-200 p-4 text-wrap">
+                    <div className="text-justify">
+                        <div className=" bg-gray-200 p-4 text-justify rounded-lg lg:rounded-none mt-6 lg:mt-0">
                             <div>
                                 <h3 className="border border-b-gray-400 text-xl font-bold text-black mb-2">Job Details</h3>
                                 <p className="mb-2"><span className="font-bold text-black">Salary: </span> <span className="text-gray-500">$ {salary}</span></p>

@@ -46,8 +46,8 @@ const AppliedJobs = () => {
     return (
         <div>
             <Helmet>Career Hub - Applied Jobs</Helmet>
-            <div className="applied rounded-t-md h-[500px]  flex items-center">
-                <p className="mx-auto text-5xl font-bold bg-black bg-opacity-50 px-48 py-20 text-blue-500">Applied Jobs</p>
+            <div className="applied bg-fixed lg:rounded-t-md lg:h-[500px] flex items-center py-20 lg:py-0">
+                <p className="mx-auto text-5xl font-bold bg-black bg-opacity-50 lg:px-48 px-20 py-20 text-blue-500">Applied Jobs</p>
             </div>
             <div className="flex">
                 <details className="dropdown my-6 mx-auto">
@@ -61,7 +61,7 @@ const AppliedJobs = () => {
                     </ul>
                 </details>
             </div>
-            <div className="mt-10">
+            <div className="mt-10 px-4 lg:px-8">
                 {
                     displayApply.map(job => <AppliedJobsDetails
 

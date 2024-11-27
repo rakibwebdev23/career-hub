@@ -41,16 +41,16 @@ const Register = () => {
             })
     }
 
-    const handleGithubLogin = () =>{
+    const handleGithubLogin = () => {
         githubLogin()
-        .then(result =>{
-            if (result.user) {
-                navigate("/");
-            }
-        })
-        .catch(error =>{
-            console.log(error);
-        })
+            .then(result => {
+                if (result.user) {
+                    navigate("/");
+                }
+            })
+            .catch(error => {
+                console.log(error);
+            })
     }
 
     return (
@@ -81,27 +81,28 @@ const Register = () => {
                         <span className="label-text font-bold">Password</span>
                     </label>
                     <input type="password" placeholder="password" className="input input-bordered" name="password" required />
-                    
+
                 </div>
                 <div className="form-control mt-6">
                     <button className="btn btn-primary font-bold text-lg">Sign Up</button>
+                </div>
+                <div className="text-center mt-4">
+                    <Link to="/login"><button onClick={handleGoogleLogin} className="btn border border-gray-400 w-full">
+                        <FaGoogle className="text-primary font-bold text-2xl"></FaGoogle>
+                        Google Sign Up
+                    </button></Link>
+                </div>
+                <div className="text-center mt-2">
+                    <Link to="/login"><button onClick={handleGithubLogin} className="btn border border-gray-400 w-full">
+                        <FaGithub className="text-2xl font-bold"></FaGithub>
+                        GitHub Sign Up
+                    </button></Link>
                 </div>
             </form>
             <div className="text-center mb-2">
                 <p>Do you have an account ? Please <Link className="text-blue-600 text-lg hover:underline hover:underline-offset-2 font-bold" to="/login">Login</Link></p>
             </div>
-            <div className="text-center mt-4">
-                <Link to="/login"><button onClick={handleGoogleLogin} className="btn border border-gray-400 lg:w-1/2 md:w-3/4">
-                    <FaGoogle className="text-primary font-bold text-2xl"></FaGoogle>
-                    Google Sign Up
-                </button></Link>
-            </div>
-            <div className="text-center mt-2">
-                <Link to="/login"><button onClick={handleGithubLogin} className="btn border border-gray-400 lg:w-1/2 md:w-3/4">
-                    <FaGithub className="text-2xl font-bold"></FaGithub>
-                    GitHub Sign Up
-                </button></Link>
-            </div>
+
         </div>
     );
 };

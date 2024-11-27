@@ -48,13 +48,13 @@ const Header = () => {
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 font-semibold">
+                <ul className="menu menu-horizontal px-1 font-semibold max-w-full">
                     {links}
 
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="bg-gradient-to-r from-blue-400 to-blue-700 hover:from-blue-700 hover:to-blue-400 px-4 py-4 pt-2 pb-2 rounded-md text-xl text-white font-semibold">Apply Now</a>
+                <Link to="/applied" className="bg-gradient-to-r from-blue-400 to-blue-700 hover:from-blue-700 hover:to-blue-400 px-4 py-4 pt-2 pb-2 rounded-md text-xl text-white font-semibold">Apply Now</Link>
             </div>
         </div>
     );

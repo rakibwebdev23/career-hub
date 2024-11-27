@@ -2,11 +2,11 @@ import logo from "../../../public/careerLogo.png"
 const Footer = () => {
     return (
         <div>
-            <footer className="footer p-10 bg-base-200 text-base-content mt-10">
+            <footer className="footer lg:px-8 px-4  bg-base-200 text-base-content mt-20">
                 <div className="footer max-w-6xl mx-auto">
                     <aside>
-                        <img className="w-20" src={logo} alt="" />
-                        <p className="font-semibold text-xl">Career Hub<br />Providing reliable tech since 1992</p>
+                        <img className="lg:w-20 w-28" src={logo} alt="" />
+                        <p className="font-bold text-xl">Career Hub<br />Providing reliable tech since 1992</p>
                     </aside>
                     <nav>
                         <h6 className="footer-title">Services</h6>

@@ -57,7 +57,7 @@ const Login = () => {
             <Helmet><title>Career Hub - Login</title></Helmet>
             <div className="items-center mt-10">
                 <h3 className="text-4xl font-bold text-center">Please Login</h3>
-                <form onSubmit={handleLogin} className="card-body lg:w-1/2 md:w-3/4 mx-auto">
+                <form onSubmit={handleLogin} className="card-body lg:w-1/2 mx-auto">
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text font-bold">Email</span>
@@ -75,22 +75,22 @@ const Login = () => {
                         <button className="btn btn-primary text-lg font-bold">Login</button>
 
                     </div>
+
+                    <div className="text-center mt-2">
+                        <Link to="/"> <button onClick={handleGoogleLogin} className="btn border border-gray-400 w-full">
+                            <FaGoogle className="text-2xl font-bold text-blue-600"></FaGoogle>
+                            Google Login
+                        </button></Link>
+                    </div>
+                    <div className="text-center mt-2">
+                        <Link to="/"><button onClick={handleGithubLogin} className="btn border border-gray-400 w-full">
+                            <FaGithub className="font-bold text-2xl"></FaGithub>
+                            GitHub Login
+                        </button></Link>
+                    </div>
                 </form>
                 <div className="text-center">
                     <p>Do not have an account ? Please <Link to="/register" className="text-blue-600 text-lg hover:underline hover:underline-offset-2 font-bold">Sign Up</Link></p>
-                </div>
-
-                <div className="text-center mt-2">
-                    <Link to="/"> <button onClick={handleGoogleLogin} className="btn border border-gray-400 lg:w-1/2 md:w-3/4">
-                        <FaGoogle className="text-2xl font-bold text-blue-600"></FaGoogle>
-                        Google Login
-                    </button></Link>
-                </div>
-                <div className="text-center mt-2">
-                    <Link to="/"><button onClick={handleGithubLogin} className="btn border border-gray-400 lg:w-1/2 md:w-3/4">
-                        <FaGithub className="font-bold text-2xl"></FaGithub>
-                        GitHub Login
-                    </button></Link>
                 </div>
             </div>
         </div>
