@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 
 const AppliedJobsDetails = ({ job }) => {
-    const { company_name, job_title, salary, location, logo, remote_or_onsite, job_type, id } = job;
+    const { company_name, job_title, salary, location, logo, remote_or_onsite, job_type, _id } = job;
     return (
         <div>
             <div className="items-center justify-between p-4 border rounded-md gap-6 mt-6 bg-gray-100 lg:flex space-y-6 lg:space-y-0 drop-shadow-lg">
@@ -26,7 +26,7 @@ const AppliedJobsDetails = ({ job }) => {
                     </div>
                 </div>
                 <div>
-                    <Link to={`/job/${id}`}><button className=" text-white font-bold py-2 px-4 rounded-md  bg-gradient-to-r from-blue-400 to-indigo-600 hover:from-pink-500 hover:to-indigo-500">View Details</button></Link>
+                    <Link to={`/jobs/${_id}`}><button className=" text-white font-bold py-2 px-4 rounded-md  bg-gradient-to-r from-blue-400 to-indigo-600 hover:from-pink-500 hover:to-indigo-500">View Details</button></Link>
                 </div>
             </div>
 

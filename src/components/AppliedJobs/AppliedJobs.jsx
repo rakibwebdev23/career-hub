@@ -7,7 +7,7 @@ import "../AppliedJobs/appliedJobs.css";
 
 const AppliedJobs = () => {
     const totalJobs = useLoaderData();
-    console.log("this is are total jobs",totalJobs);
+    // console.log("this is are total jobs",totalJobs);
     
     const [apply, setJobsApplied] = useState([]);
     const [displayApply, setDisplayApply] = useState([]);

@@ -16,6 +16,7 @@ import Login from './pages/Login/Login.jsx';
 import Register from './pages/Register/Register.jsx';
 import UserProvider from './provider/UserProvider/UserProvider.jsx';
 import PrivateRouter from './components/PrivateRouter/PrivateRouter.jsx';
+import Job from './components/Job/Job.jsx';
 
 
 const router = createBrowserRouter([
@@ -35,16 +36,21 @@ const router = createBrowserRouter([
       {
         path: '/applied',
         element: <PrivateRouter><AppliedJobs></AppliedJobs></PrivateRouter>,
-        loader: () => fetch('../public/jobs.json')
+        loader: () => fetch('http://localhost:5000/jobs')
       },
       {
         path: '/blogs',
         element: <Blogs></Blogs>
       },
       {
-        path: '/job/:id',
+        path: '/jobs/:id',
         element: <PrivateRouter><ViewDetails></ViewDetails></PrivateRouter>,
-        loader: () => fetch('/public/jobs.json')
+        loader: ({props}) => fetch(`http://localhost:5000/jobs/${props.id}`)
+      },
+      {
+        path: '/jobs/:id',
+        element: <PrivateRouter><Job></Job></PrivateRouter>,
+        loader: ({props}) => fetch(`http://localhost:5000/jobs/${props.id}`)
       },
       {
         path: "/login",

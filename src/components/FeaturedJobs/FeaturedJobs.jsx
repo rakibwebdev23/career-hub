@@ -7,7 +7,7 @@ const FeaturedJobs = () => {
     const [showAllData, setShowAllData] = useState(4);
 
     useEffect(() => {
-        fetch('jobs.json')
+        fetch('http://localhost:5000/jobs')
             .then(res => res.json())
             .then(data => setJobs(data))
     }, [])
@@ -19,7 +19,7 @@ const FeaturedJobs = () => {
                     <h4 className="text-4xl text-black font-bold mb-2">Featured Jobs</h4>
                     <p className="lg:text-xl text-black text-center">Explore thousands of job opportunities with all the information you need. Its your future</p>
                 </div>
-                <div className="grid lg:grid-cols-2 gap-10 items-center px-4 lg:px-0">
+                <div className="grid lg:grid-cols-2 gap-10 items-center px-4 lg:px-8">
                     {
                         jobs.slice(0, showAllData).map(job => <Job
                             key={job.id}
