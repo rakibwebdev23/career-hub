@@ -1,5 +1,9 @@
-import { Helmet, HelmetProvider } from "react-helmet-async";
 import { getJobInStorage } from "../../utilities/storage";
+import { useLoaderData } from "react-router-dom";
+import { useEffect, useState } from "react";
+import AppliedJobsDetails from "../AppliedJobsDetails/AppliedJobsDetails";
+import HelmetShared from "../shared/HelmetShared/HelmetShared";
+import "./AppliedJobs.css"
 
 const AppliedJobs = () => {
     const totalJobs = useLoaderData();
@@ -34,17 +38,14 @@ const AppliedJobs = () => {
     };
 
     return (
-        <HelmetProvider>
-            <div>
-                <Helmet>
-                    <title>Career Hub - Applied Jobs</title>
-                </Helmet>
+            <div className="mt-10">
+                <HelmetShared helmetTitle="Applied Jobs"></HelmetShared>
                 <div className="applied bg-fixed lg:rounded-t-md lg:h-[500px] flex items-center py-20 lg:py-0">
                     <p className="mx-auto text-5xl font-bold bg-black bg-opacity-50 lg:px-48 px-20 py-20 text-blue-500">
                         Applied Jobs
                     </p>
                 </div>
-                <div className="flex">
+                <div className="lg:flex mt-8 my-4">
                     <details className="dropdown my-6 mx-auto">
                         <summary className="m-1 px-32 py-3 bg-blue-600 text-white font-bold">Open or Close</summary>
                         <ul className="p-2shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-64">
@@ -65,7 +66,6 @@ const AppliedJobs = () => {
                     ))}
                 </div>
             </div>
-        </HelmetProvider>
     );
 };
 

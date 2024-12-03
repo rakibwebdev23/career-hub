@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Job from "../Job/Job";
-import CategoryBanner from "../CategoryBanner/CategoryBanner";
 
 const FeaturedJobs = () => {
 
