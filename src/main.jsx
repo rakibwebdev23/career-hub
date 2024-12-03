@@ -9,8 +9,6 @@ import Root from './components/Root/Root.jsx';
 import Home from './components/Home/Home.jsx';
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs.jsx';
-import Statistics from './components/Statistics/Statistics.jsx';
-import Blogs from './components/Blogs/Blogs.jsx';
 import ViewDetails from './components/ViewDetails/ViewDetails.jsx';
 import Login from './pages/Login/Login.jsx';
 import Register from './pages/Register/Register.jsx';
@@ -28,22 +26,14 @@ const router = createBrowserRouter([
         element: <Home></Home>
       },
       {
-        path: '/statistics',
-        element: <Statistics></Statistics>
-      },
-      {
         path: '/applied',
         element: <PrivateRouter><AppliedJobs></AppliedJobs></PrivateRouter>,
         loader: () => fetch('/public/jobs.json')
       },
       {
-        path: '/blogs',
-        element: <Blogs></Blogs>
-      },
-      {
         path: '/job/:id',
-        element: <ViewDetails></ViewDetails>,
-        loader: () => fetch('jobs.json')
+        element: <PrivateRouter><ViewDetails></ViewDetails></PrivateRouter>,
+        loader: () => fetch('/public/jobs.json')
       },
       {
         path: "/login",

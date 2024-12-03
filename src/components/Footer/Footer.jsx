@@ -1,4 +1,4 @@
-import logo from "../../../public/thLogo.png"
+import logo from "../../../public/careerLogo.png"
 const Footer = () => {
     return (
         <div>
@@ -6,7 +6,7 @@ const Footer = () => {
                 <div className="footer max-w-full mx-auto">
                     <aside>
                         <img className="lg:w-20 w-28" src={logo} alt="" />
-                        <p className="font-bold text-xl">TECH HUB<br />Providing reliable tech since 1992</p>
+                        <p className="font-bold text-xl">CAREER HUB<br />Providing reliable tech since 1992</p>
                     </aside>
                     <nav>
                         <h6 className="footer-title">Services</h6>
@@ -31,7 +31,7 @@ const Footer = () => {
                 </div>
             </footer>
             <aside className="text-center bg-gray-200 font-bold py-4">
-                <p>Copyright © {new Date().getFullYear()} - All right reserved by TECH HUB</p>
+                <p>Copyright © {new Date().getFullYear()} - All right reserved by Career Hub</p>
             </aside>
         </div>
     );

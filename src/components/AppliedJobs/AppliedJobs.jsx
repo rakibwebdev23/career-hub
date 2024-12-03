@@ -41,7 +41,7 @@ const AppliedJobs = () => {
             <div className="mt-10">
                 <HelmetShared helmetTitle="Applied Jobs"></HelmetShared>
                 <div className="applied bg-fixed lg:rounded-t-md lg:h-[500px] flex items-center py-20 lg:py-0">
-                    <p className="mx-auto text-5xl font-bold bg-black bg-opacity-50 lg:px-48 px-20 py-20 text-blue-500">
+                    <p className="mx-auto text-5xl font-bold bg-black bg-opacity-50 rounded-2xl lg:px-48 px-20 py-20 text-blue-500">
                         Applied Jobs
                     </p>
                 </div>

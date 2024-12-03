@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { UserContext } from "../../provider/UserProvider/UserProvider";
-import logo from "../../../public/thLogo.png"
+import logo from "../../../public/careerLogo.png"
 
 const Header = () => {
 
@@ -20,8 +20,6 @@ const Header = () => {
     const links = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/applied">Applied Jobs</NavLink></li>
-        {/* <li><NavLink to="/statistics">Statistics</NavLink></li>
-        <li><NavLink to="/blogs">Blogs</NavLink></li> */}
         <>
 
             {
@@ -44,7 +42,7 @@ const Header = () => {
                 </div>
                 <div className="flex items-center">
                     <NavLink to="/"><img className="w-20" src={logo} alt="" /></NavLink>
-                    <p className="text-2xl font-bold text-blue-600">TECH HUB.</p>
+                    <p className="lg:text-2xl text-xl font-bold text-blue-600">CAREER HUB.</p>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
