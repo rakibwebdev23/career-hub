@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Job from "../Job/Job";
+import CategoryBanner from "../CategoryBanner/CategoryBanner";
 
 const FeaturedJobs = () => {
 
@@ -7,7 +8,7 @@ const FeaturedJobs = () => {
     const [showAllData, setShowAllData] = useState(4);
 
     useEffect(() => {
-        fetch('http://localhost:5000/jobs')
+        fetch('jobs.json')
             .then(res => res.json())
             .then(data => setJobs(data))
     }, [])

@@ -16,8 +16,6 @@ import Login from './pages/Login/Login.jsx';
 import Register from './pages/Register/Register.jsx';
 import UserProvider from './provider/UserProvider/UserProvider.jsx';
 import PrivateRouter from './components/PrivateRouter/PrivateRouter.jsx';
-import Job from './components/Job/Job.jsx';
-
 
 const router = createBrowserRouter([
   {
@@ -36,21 +34,16 @@ const router = createBrowserRouter([
       {
         path: '/applied',
         element: <PrivateRouter><AppliedJobs></AppliedJobs></PrivateRouter>,
-        loader: () => fetch('http://localhost:5000/jobs')
+        loader: () => fetch('jobs.json')
       },
       {
         path: '/blogs',
         element: <Blogs></Blogs>
       },
       {
-        path: '/jobs/:id',
-        element: <PrivateRouter><ViewDetails></ViewDetails></PrivateRouter>,
-        loader: ({props}) => fetch(`http://localhost:5000/jobs/${props.id}`)
-      },
-      {
-        path: '/jobs/:id',
-        element: <PrivateRouter><Job></Job></PrivateRouter>,
-        loader: ({props}) => fetch(`http://localhost:5000/jobs/${props.id}`)
+        path: '/job/:id',
+        element: <ViewDetails></ViewDetails>,
+        loader: () => fetch('jobs.json')
       },
       {
         path: "/login",
@@ -66,10 +59,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div className='max-w-full mx-auto mt-2'>
-      <UserProvider>
+    <UserProvider>
+      <div className='max-w-full mx-auto mt-2'>
         <RouterProvider router={router} />
-      </UserProvider>
-    </div>
+      </div>
+    </UserProvider>
   </React.StrictMode>,
 )

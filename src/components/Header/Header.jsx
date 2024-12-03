@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { UserContext } from "../../provider/UserProvider/UserProvider";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../../public/careerHub.png"
+import { UserContext } from "../../provider/UserProvider/UserProvider";
+import logo from "../../../public/careerLogo.png"
 
 const Header = () => {
 
@@ -26,7 +26,7 @@ const Header = () => {
 
             {
                 user ?
-                    <li><Link><button onClick={handleLogOut}>Log Out</button></Link></li> :
+                    <li><Link><button onClick={handleLogOut}>LogOut</button></Link></li> :
                     <li><NavLink to="/login">Login</NavLink></li>
             }
         </>

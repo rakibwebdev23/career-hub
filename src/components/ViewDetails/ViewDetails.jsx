@@ -1,11 +1,12 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { savedJobInStorage } from "../../utilities/storage";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import HelmetShared from "../shared/HelmetShared/HelmetShared";
+import { savedJobInStorage } from "../../utilities/storage";
 
 const ViewDetails = () => {
     const jobs = useLoaderData();
+    console.log(jobs);
     const { id } = useParams();
     const idIt = parseInt(id);
     const job = jobs.find(job => job.id === idIt);
