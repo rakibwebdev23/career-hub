@@ -5,12 +5,11 @@ import HelmetShared from "../shared/HelmetShared/HelmetShared";
 import { savedJobInStorage } from "../../utilities/storage";
 
 const ViewDetails = () => {
-    const jobs = useLoaderData();
-    console.log(jobs);
+    const jobs = useLoaderData() || [];
     const { id } = useParams();
     const idIt = parseInt(id);
-    const job = jobs.find(job => job.id === idIt);
-    const { job_description, job_responsibility, educational_requirements, experiences, salary, job_title, logo, contact_information } = job;
+    const jobItem = jobs.find(job => job.id === idIt);
+    const { job_description, job_responsibility, educational_requirements, experiences, salary, job_title, logo, contact_information } = jobItem;
 
     const handleJobApplication = () => {
         savedJobInStorage(idIt);

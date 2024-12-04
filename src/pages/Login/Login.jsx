@@ -9,15 +9,14 @@ const Login = () => {
     const { userLogin, googleLogin, githubLogin } = useContext(UserContext);
     const navigate = useNavigate();
 
-    const handleLogin = e => {
-        e.preventDefault();
-        const email = e.target.email.value;
-        const password = e.target.password.value;
-        console.log(email, password);
+    const handleLogin = event => {
+        event.preventDefault();
+        const email = event.target.email.value;
+        const password = event.target.password.value;
 
         userLogin(email, password)
             .then(result => {
-                e.target.reset();
+                event.target.reset();
                 if (result.user) {
                     navigate("/");
                 }
@@ -60,7 +59,7 @@ const Login = () => {
                 <form onSubmit={handleLogin} className="card-body lg:w-1/2 mx-auto">
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text font-bold">Email</span>
+                            <span className="label-text font-bold">email</span>
                         </label>
                         <input type="email" placeholder="email" className="input input-bordered" name="email" required />
                     </div>

@@ -9,17 +9,17 @@ const Register = () => {
     const { createUser, googleLogin, githubLogin } = useContext(UserContext);
     const navigate = useNavigate();
 
-    const handleRegister = e => {
-        e.preventDefault();
-        const name = e.target.name.value;
-        const photo = e.target.photo.value;
-        const email = e.target.email.value;
+    const handleRegister = event => {
+        event.preventDefault();
+        const name = event.target.name.value;
+        const photo = event.target.photo.value;
+        const email = event.target.email.value;
         const password = e.target.password.value;
         console.log(name, photo, email, password);
 
         createUser(email, password)
             .then(result => {
-                e.target.reset();
+                event.target.reset();
                 if (result.user) {
                     navigate("/");
                 }

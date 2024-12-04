@@ -2,7 +2,7 @@ import logo from "../../../public/careerLogo.png"
 const Footer = () => {
     return (
         <div>
-            <footer className="footer p-4 lg:p-8 bg-base-200 text-base-content lg:mt-20 mt-16">
+            <footer className="footer p-4 lg:p-6 bg-base-200 text-base-content lg:mt-20 mt-16">
                 <div className="footer max-w-full mx-auto">
                     <aside>
                         <img className="lg:w-20 w-28" src={logo} alt="" />

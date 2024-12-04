@@ -6,7 +6,7 @@ import HelmetShared from "../shared/HelmetShared/HelmetShared";
 import "./AppliedJobs.css"
 
 const AppliedJobs = () => {
-    const totalJobs = useLoaderData();
+    const totalJobs = useLoaderData() || [];
     const [apply, setJobsApplied] = useState([]);
     const [displayApply, setDisplayApply] = useState([]);
 
