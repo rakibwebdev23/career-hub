@@ -2,7 +2,7 @@ import logo from "../../../public/careerLogo.png";
 
 const Footer = () => {
     return (
-        <div>
+        <div className="mt-10">
             <footer className="bg-blue-900 text-white py-12">
                 <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 text-center sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <aside className="flex flex-col items-center sm:items-start mb-8 sm:mb-0">
