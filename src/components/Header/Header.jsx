@@ -64,7 +64,7 @@ const Header = () => {
             <li>
                 <Link
                     to="/applied"
-                    className="bg-gradient-to-r from-rose-500 via-red-400 to-red-500 px-4 py-2 rounded-md text-white font-semibold transition duration-300"
+                    className="bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900 px-4 py-2 rounded-md text-white hover:from-blue-700 hover:to-blue-500 hover:text-black font-semibold transition duration-300"
                 >
                     Apply Now
                 </Link>
@@ -80,7 +80,7 @@ const Header = () => {
                 </NavLink>
             </div>
             <div className="navbar-end hidden lg:flex">
-                <ul className="menu menu-horizontal px-4 font-semibold space-x-4">{links}</ul>
+                <ul className="menu menu-horizontal px-4 font-bold space-x-4">{links}</ul>
             </div>
             <div className="navbar-end lg:hidden">
                 <div className="dropdown dropdown-end">
