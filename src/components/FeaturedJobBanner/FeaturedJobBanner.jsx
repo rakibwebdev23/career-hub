@@ -2,7 +2,7 @@ import "../FeaturedJobBanner/FeaturedJobBanner.css"
 
 const FeaturedJobBanner = () => {
     return (
-        <div className="feature h-screen hero mt-20 bg-fixed">
+        <div className="feature lg:h-screen h-[500px ] hero mt-20 bg-fixed">
             <div className="hero-content text-center">
                 <div className="lg:h-[250px] lg:w-3/4 bg-black bg-opacity-70 flex items-center px-6 lg:px-0">
                     <div className='lg:px-24 py-6 lg:py-0'>

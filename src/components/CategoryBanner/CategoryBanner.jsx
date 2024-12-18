@@ -2,7 +2,7 @@ import "../CategoryBanner/CategoryBanner.css"
 
 const CategoryBanner = () => {
     return (
-        <div className="category hero h-screen mt-20 bg-black">
+        <div className="category hero lg:h-screen h-[500px] mt-20 bg-black">
             <div className="hero-content text-center">
                 <div className="bg-opacity-70 flex items-center lg:h-[250px] lg:w-3/4 bg-black px-4 lg:px-0">
                     <div className='lg:px-24 py-6 lg:py-0'>
