@@ -8,7 +8,6 @@
 - **Job Listings**: Explore and filter job opportunities from various industries.
 - **Responsive Design**: Fully responsive design optimized for mobile and desktop users, powered by Tailwind CSS.
 - **User Profile**: Manage your profile, view your job applications, and track your progress.
-- **No Backend**: The app is built with a serverless architecture, utilizing Firebase for authentication without the need for a traditional backend.
 
 ## Technologies Used
 
