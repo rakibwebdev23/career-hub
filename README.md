@@ -2,17 +2,6 @@
 
 **Career Hub** is a modern web application that helps users discover job opportunities and manage their career profiles. The platform leverages Firebase Authentication for secure sign-ins via Google or GitHub, and provides a responsive, user-friendly experience built with React.js and Tailwind CSS. The application does not use a traditional backend, relying on Firebase services for authentication and user management.
 
-## Table of Contents
-
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Firebase Authentication Setup](#firebase-authentication-setup)
-- [Tailwind CSS Customization](#tailwind-css-customization)
-- [License](#license)
-
 ## Features
 
 - **Authentication**: Seamless user sign-in using Google or GitHub accounts with Firebase Authentication.
@@ -30,7 +19,7 @@
 
 ## **Links**
 
-- **Live Site**: [Halal Haven Restaurant](https://career-hub-ad8be.web.app)
+- **Live Site**: [Career Hub](https://career-hub-ad8be.web.app)
 - **Portfolio**: [rakib-hasan.web.app](https://rakib-hasan-eb93b.web.app)
 - **LinkedIn**: [Rakib Hasan](https://www.linkedin.com/in/md-rakib-hasan-0606b933a)
 
