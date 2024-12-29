@@ -11,7 +11,7 @@ const Job = ({ job }) => {
             <div className="card-body">
                 <h2 className="card-title font-bold text-xl">{job_title}</h2>
                 <p className="text-lg text-gray-700">{company_name}</p>
-                <div className="flex lg:flex-row items-center flex-col gap-2 lg:gap-4">
+                <div className="flex lg:flex-row flex-col gap-2 lg:gap-4">
                     <button className="font-extrabold py-2 px-5 border-2 border-indigo-500/75 rounded text-indigo-500">{remote_or_onsite}</button>
                     <button className="font-extrabold py-2 px-5 border-2 border-indigo-500/75 rounded text-indigo-500">{job_type}</button>
                 </div>
